@@ -1,0 +1,5 @@
+# Team page is in stealth for now — keep it and headshots local-only, don't publish to the public repo.
+about.html
+photos/headshots/
+
+.DS_Store

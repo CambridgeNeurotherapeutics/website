@@ -9,17 +9,18 @@
   <link rel="icon" type="image/png" sizes="32x32" href="photos/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="180x180" href="photos/favicon-180.png" />
   <link rel="apple-touch-icon" href="photos/favicon-180.png" />
+  <script src="site-config.js"></script>
 </head>
 <body>
 
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="index.html">
-        <img class="brand-logo" src="photos/logo-wordmark-small.png" alt="Cambridge Neurotherapeutics" />
+        <img class="brand-logo" src="photos/logo-wordmark.png" alt="Cambridge Neurotherapeutics" />
       </a>
       <nav class="main-nav">
         <a href="index.html">Home</a>
-        <a href="about.html">About &amp; Team</a>
+        <a href="about.html" class="team-page-link">About &amp; Team</a>
         <a href="index.html#contact">Contact</a>
       </nav>
     </div>
@@ -34,7 +35,7 @@
         translating neuroscience research into disease-modifying treatments for people living
         with ALS and their families.
       </p>
-      <a class="btn btn-primary" href="about.html">Meet the Team</a>
+      <a class="btn btn-primary team-page-link" href="about.html">Meet the Team</a>
       <a class="btn btn-secondary" href="#contact">Get in Touch</a>
     </div>
   </section>
@@ -106,9 +107,16 @@
   <footer class="site-footer">
     <div class="wrap">
       <span>&copy; 2026 Cambridge Neurotherapeutics. All rights reserved.</span>
-      <span><a href="about.html">About &amp; Team</a></span>
+      <span class="team-page-link"><a href="about.html">About &amp; Team</a></span>
     </div>
   </footer>
 
+  <script>
+    if (!window.SITE_CONFIG.teamPageEnabled) {
+      document.querySelectorAll('.team-page-link').forEach(function (el) {
+        el.style.display = 'none';
+      });
+    }
+  </script>
 </body>
 </html>
