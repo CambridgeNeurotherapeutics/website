@@ -64,12 +64,10 @@ header.site-header {
 
 .brand:hover { text-decoration: none; }
 
-.brand .mark {
-  width: 30px;
-  height: 30px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, var(--navy), var(--accent));
-  flex-shrink: 0;
+.brand-logo {
+  height: 34px;
+  width: auto;
+  display: block;
 }
 
 nav.main-nav {
