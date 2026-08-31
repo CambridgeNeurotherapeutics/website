@@ -114,6 +114,15 @@ nav.main-nav a:hover { color: var(--accent); text-decoration: none; }
   margin: 0 0 32px;
 }
 
+.scifi-image {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  margin-top: 40px;
+  border-radius: 12px;
+}
+
 .btn {
   display: inline-block;
   padding: 12px 24px;
